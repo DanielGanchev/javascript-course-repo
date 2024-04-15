@@ -1,5 +1,10 @@
-const fs = require(`node:fs`);
-fs.writeFile(`message.txt`, `Hello Node.js`, (err) => {
-    if (err) throw err;
-    console.log(`The file has been saved!`);
-    });
+import  generateName  from 'sillyname';
+import superheroes from 'superheroes';
+
+
+
+let superhero = superheroes.random();
+let sillyname = generateName();
+
+console.log(`My silly name is ${sillyname}!`);
+console.log(`My superhero name is ${superhero}!`);
