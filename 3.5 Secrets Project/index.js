@@ -23,7 +23,7 @@ app.post("/check", (req, res) => {
 if (password === "ILoveProgramming") {
     res.sendFile(__dirname + "/public/secret.html");
 }else {
-    res.sendFile(__dirname + "/public/index.html");
+    res.redirect("/");
 }
     } );
 
